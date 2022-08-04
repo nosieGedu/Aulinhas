@@ -35,18 +35,22 @@ public class ExercicioUm {
                 break;
             // 2) Crie um programa que calcule a área (`lado1 * lado2`)
             case 2:
+                System.out.println("A área é: " + area( 10, 10));
                 // area(double ladoUm, double ladoDois)
                 break;
             // 3) Crie um programa que calcule o volume (`largura * altura * profundidade`)
             case 3:
+                System.out.println("O Volume é: " + volume(10, 10, 10));
                 // volume(double largura, double altura, double profundidade)
                 break;
             // 4) Crie um programa que avalie se um valor é maior do que o dobro de outro valor
             case 4:
+                System.out.println("O Valor verificado é maior que o dobro do valor da base? " + valorMaiorQueDobro(10, 21));
                 // valorMaiorQueDobro(double base, double verificar)
                 break;
             // 5) Crie um programa que calcule _bhaskara_
             case 5:
+                //System.out.println("O resultado do calculo de Bhaskara é: " + bhaskara(20, 10, 20));
                 // bhaskara(int a, int b, int c);
                 break;
             // 6) Crie um programa que calcule a velocidade média de uma viagem (`distancia (km) / tempo (h)`)
@@ -95,15 +99,15 @@ public class ExercicioUm {
     }
 
     public static double area(double ladoUm, double ladoDois) {
-        return 0;
+        return (ladoUm * ladoDois);
     }
 
     public static double volume(double largura, double altura, double profundidade) {
-        return 0;
+        return (largura * altura * profundidade);
     }
 
     public static boolean valorMaiorQueDobro(double base, double verificar) {
-        return false;
+        return (base *2 < verificar);
     }
 
     public static double[] bhaskara(int a, int b, int c) {
